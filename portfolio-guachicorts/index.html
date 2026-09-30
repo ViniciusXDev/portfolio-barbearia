@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sistema GuachiCort's</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-zinc-950 text-zinc-100 font-sans">
+    <header class="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden border-b border-zinc-800">
+        <div class="absolute top-[-10%] left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="flex-1 text-center md:text-left">
+                <span class="text-amber-500 font-bold tracking-widest text-xs uppercase mb-4 block">Sistema Agendamento</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-zinc-100 leading-tight mb-6">
+                    Sistema <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-300">GuachiCort's</span>
+                </h1>
+                <p class="text-zinc-400 text-lg mb-8 leading-relaxed max-w-xl mx-auto md:mx-0">
+                    Uma plataforma de agendamento completa, desenhada do zero para entregar velocidade extrema, 100% de personalização e gestão automatizada via WhatsApp.
+                </p>
+                <a href="#funcionalidades" class="inline-block px-8 py-4 bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold rounded-xl transition-transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(245,158,11,0.2)]">
+                    Explorar o Projeto
+                </a>
+                <a href="https://guaxibarber.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block ml-4 px-8 py-4 bg-zinc-900 hover:bg-zinc-800 text-zinc-400 font-bold rounded-xl transition-transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(0,0,0,0.2)]">
+                    Ver Sistema <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                </a>
+            </div>
+
+            <div class="flex-1 w-full">
+                <div class="aspect-[4/3] bg-zinc-900 border border-zinc-800 rounded-2xl p-2 shadow-2xl relative">
+                    <img src="img/hero.png" alt="Sistema GuachiCorts" class="w-full h-full object-cover rounded-xl border border-zinc-800/50">
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section id="diferenciais" class="py-20 bg-zinc-950">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-zinc-100 mb-4">Arquitetura Pensada no Cliente</h2>
+                <p class="text-zinc-400">O projeto foi construído sobre três pilares fundamentais.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-amber-500/50 transition-colors group">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zinc-100 mb-3">Velocidade Extrema</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Construído como Single Page Application (SPA), o sistema não recarrega a página. Navegação instantânea que evita desistências no momento do agendamento.
+                    </p>
+                </div>
+
+                <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-amber-500/50 transition-colors group">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zinc-100 mb-3">100% Personalizado</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Esqueça templates prontos. O UI/UX foi desenhado sob medida para a identidade visual da barbearia, garantindo uma experiência premium e exclusiva.
+                    </p>
+                </div>
+
+                <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-amber-500/50 transition-colors group">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-zinc-100 mb-3">Integração WhatsApp</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Comunicação automatizada usando a Evolution API. Lembretes automáticos 1h antes do corte e avisos instantâneos de aprovação de horários.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="funcionalidades" class="py-20 bg-zinc-900/50 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6 space-y-32">
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 w-full">
+                    <img src="img/cliente.png" alt="Tela de Agendamento do Cliente" class="w-full h-auto rounded-xl shadow-2xl border border-zinc-700/50 hover:scale-[1.02] transition-transform duration-500">
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold text-amber-500 mb-4">A Experiência do Cliente</h3>
+                    <p class="text-zinc-300 mb-4 leading-relaxed">
+                        A ideia aqui foi fazer um fluxo direto ao ponto. O dono do salão pediu para que a agenda fosse dinâmica: se o cliente escolhe um corte simples, o sistema reserva 20 minutos; se for uma química, trava a agenda por 1h30. Tudo calculado sozinho.
+                    </p>
+                    <ul class="space-y-3 text-zinc-400 text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-qrcode text-amber-500 mt-0.5"></i> <span><strong>Sinal via Pix:</strong> Para dar um ar mais profissional e acabar com a dor de cabeça de cliente que marca e não vai, implementei a cobrança de um sinal via Pix com QR Code direto na tela.</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-shield-halved text-amber-500 mt-0.5"></i> <span><strong>Blindagem no Banco:</strong> Deu um trabalho legal, mas fiz uma trava no Firebase: se dois clientes tentarem "roubar" o mesmo horário no mesmo milissegundo, o sistema bloqueia um deles para não dar conflito.</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-clock-rotate-left text-amber-500 mt-0.5"></i> <span><strong>Painel Próprio:</strong> O cliente tem um perfil para ver o que já foi cortado e acompanhar se o barbeiro já aprovou o Pix dele.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="flex-1 w-full">
+                    <img src="img/barbeiro.png" alt="Painel de Gestão do Barbeiro" class="w-full h-auto rounded-xl shadow-2xl border border-zinc-700/50 hover:scale-[1.02] transition-transform duration-500">
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold text-amber-500 mb-4">A Ferramenta do Barbeiro</h3>
+                    <p class="text-zinc-300 mb-4 leading-relaxed">
+                        O painel dele foi pensado para ser usado de forma rápida no celular, entre um corte e outro. O cliente pediu autonomia total, então deixei a gestão da agenda nas mãos dele.
+                    </p>
+                    <ul class="space-y-4 text-zinc-400 text-sm">
+                        <li><strong class="text-zinc-200"><i class="fa-solid fa-calendar-check text-amber-500 w-5"></i> Visão Clara do Dia:</strong> Uma tabela simples onde ele bate o olho e sabe quem é o próximo. Se alguém sumir ou desmarcar, ele resolve ali mesmo.</li>
+                        <li><strong class="text-zinc-200"><i class="fa-solid fa-list-check text-amber-500 w-5"></i> Aprovações na Hora:</strong> Quando cai um agendamento novo com o Pix pago, fica pendente nesta aba. Ele confere na conta bancária e libera com um clique.</li>
+                        <li><strong class="text-zinc-200"><i class="fa-solid fa-clock text-amber-500 w-5"></i> Ele manda na Agenda:</strong> Ele mesmo cria a grade de horários, abre vagas extras de fim de ano ou apaga horários que precisar tirar de folga.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 w-full relative">
+                    <div class="aspect-video bg-zinc-950 border border-emerald-500/30 rounded-xl flex flex-col items-center justify-center shadow-[0_0_40px_rgba(16,185,129,0.1)] relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent"></div>
+                        <i class="fa-brands fa-whatsapp text-6xl text-emerald-500 z-10 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <span class="text-emerald-500 font-medium z-10">Integração WhatsApp</span>
+                        <span class="absolute bottom-4 right-4 text-emerald-500/30 font-mono text-xs z-10">Evolution API (Node.js)</span>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold text-emerald-500 mb-4">A Mágica da Automação</h3>
+                    <p class="text-zinc-300 mb-4 leading-relaxed">
+                        Foi aqui que o projeto subiu de nível. Para reduzir as faltas, integrei o sistema com a Evolution API. Basicamente, a barbearia conversa com o cliente no zap sem o barbeiro precisar digitar uma única palavra.
+                    </p>
+                    <ul class="space-y-4 text-zinc-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-robot text-emerald-500 mt-0.5 text-lg"></i>
+                            <span><strong>Acabaram os Esquecimentos:</strong> Criei um script que varre o banco de dados e avisa o cliente no WhatsApp exatos 60 minutos antes do corte. Salvou a agenda do salão várias vezes.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-bolt text-emerald-500 mt-0.5 text-lg"></i>
+                            <span><strong>Respostas Vapt-Vupt:</strong> Assim que o barbeiro dá o "ok" no pagamento, o sistema já dispara o zap confirmando tudo pro cliente.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-shield text-emerald-500 mt-0.5 text-lg"></i>
+                            <span><strong>Prevenção de Falhas (Fallback):</strong> Como sabemos que APIs e servidores podem cair de vez em quando, fiz um plano B de segurança. Se o servidor principal falhar, o código gera um link nativo do WhatsApp e envia do mesmo jeito.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="bg-zinc-950 border-t border-zinc-900 py-10 text-center">
+        <h2 class="text-lg font-bold text-zinc-100 mb-2">Gostou do Projeto?</h2>
+        <p class="text-zinc-500 text-sm mb-6">Desenvolvido com <i class="fa-solid fa-heart text-amber-500 mx-1"></i> para resolver problemas reais de negócio.</p>
+        
+        <div class="flex justify-center gap-4 mb-8">
+            <a href="https://github.com/ViniciusXDev" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-amber-500 hover:border-amber-500 transition-colors">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/marcusxavierdev/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-amber-500 hover:border-amber-500 transition-colors">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+        
+        <p class="text-zinc-700 text-xs">&copy; 2026 - Construído por Mim. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
